@@ -1,2 +1,58 @@
 /* CSS Document */
+body {
+	text-align: center;
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+	font-size: 1.2em;
+	color: black;
+}
 
+.container {
+	display: grid;
+	grid-template: 50px 50px 50px repeat(5, 200px) / repeat(12, auto);
+	background-color: lightgray;
+}
+
+/* Navbar */
+.navbar {
+	width: 98.8%;
+	height: 50px;
+	top: 0;
+	display: flex;
+	position: fixed;
+	justify-content: flex-end;
+	align-items: center;
+	z-index: 100;
+	background-color: lightgray;
+	font-weight: bold;
+}
+
+
+.navbar a {
+	float: right;
+	font-size: 1em;
+	text-decoration: none;
+	color: black;
+	background-color: turquoise;
+	width: 120px;
+	margin-right: 10px;
+	padding: 5px 0;
+}
+
+.navbar a:hover {
+	text-decoration: underline;
+	background-color: #00F3F3;
+	color: white;
+}
+
+/* Header Styles */
+h1, h4 {
+	text-transform: uppercase;
+}
+
+h1 {
+	grid-area: 2 / 1 / span 1 / span 12;
+}
+
+h4 {
+	grid-area: 3 / 1 / span 1 / span 12;
+}
